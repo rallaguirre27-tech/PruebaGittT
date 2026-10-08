@@ -14,5 +14,11 @@ public class CuentaBancaria {
     public double obtenerSaldo() {
         return this.saldo;
     }
+
+    public void retirar(double monto) {
+        if (monto <= saldo) {
+            saldo -= monto;
+        }
+    }
 }
 
